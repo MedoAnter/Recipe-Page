@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: var(--Eggshell);
+  font-family: 'Outfit', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#card .img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+#card .card-content {
+  max-width: 450px;
+  background-color: var(--Rose-White);
+  padding: 1rem 2rem;
+}
+
+#card .card-content > p {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--Wenge-Brown);
+  margin-bottom: 10px;
+}
+
+#card .card-content .bk {
+  background-color: hsl(330, 58%, 90%);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 15px;
+}
+
+#card .card-content .bk .header {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(329, 76%, 18%);
+}
+
+#card .card-content .bk p {
+  color: var(--Wenge-Brown);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#card .card-content .bk p .bt {
+  color: hsl(329, 76%, 18%);
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+#card .card-content .bk p b {
+  color: var(--Dark-Charcoal);
+}
+
+h2 {
+  color: hsl(16, 37%, 35%);
+}
+
+#card .card-content .row1 p {
+  margin-bottom: 1px;
+  font-size: 13px;
+  color: var(--Wenge-Brown);
+  font-weight: 500;
+}
+
+#card .card-content .row1 p .bt {
+  font-size: 30px;
+  color: hsl(14, 65%, 15%);
+  margin-right: 12px;
+}
+
+#card .card-content .row1 hr {
+  margin: 15px 0;
+  color: #333;
+}
+
+#card .card-content .row2 p .bt {
+  color: hsl(14, 65%, 15%);
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+#card .card-content .row2 p {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--Wenge-Brown);
+}
+
+#card .card-content .row2 p .bold {
+  color: var(--Dark-Charcoal);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#card .card-content .row3 > p {
+  color: var(--Wenge-Brown);
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#card .card-content .row3 .det {
+  padding: 0 1rem;
+}
+
+#card .card-content .row3 .det .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#card .card-content .row3 .det .row p {
+  margin-right: 120px;
+  font-size: 14px;
+  color: var(--Dark-Charcoal);
+}
+
+#card .card-content .row3 .det .row b {
+  color: hsl(14, 65%, 15%);
+}
+
+#card .card-content .row3 .det .row hr {
+  color: #333;
+}
+
+@media (max-width: 380px) {
+  h1,
+  h2 {
+    font-size: 16px;
+  }
+
+  p,
+  span,
+  .bt {
+    font-size: 14px;
+  }
+
+  #card .card-content .bk .header {
+    font-size: 13px;
+  }
+
+  #card .card-content .bk p {
+    font-size: 13px;
+  }
+
+  
+
+
+  .row2 p{
+    font-size: 8px;
+  }
+}
